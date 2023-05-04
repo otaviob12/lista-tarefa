@@ -1,47 +1,55 @@
 @charset "UFT-8";
 
 *{
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
 }
 
 body{
-    background-image: url('../img/fundo.jpg');
+    background-color: rgb(39, 39, 39);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+}
+header{
+    width: 100vw;
+    background-color: rgb(37, 37, 37);
+    border-bottom: 2px solid rgb(59, 59, 59);
+    height: 120px;
 }
 h1{
     text-align: center;
     font-size: 3em;
-    font-variant: small-caps;
+    font-variant: small-caps; 
+    padding-top: 35px;
 }
-header{
+.tarefas{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     width: 50%;
-    margin: auto auto;
+    margin: auto;
+    margin-top: 50px;
 }
 input{
-    height: 120px;
+    height: 50px;
     font-size: 1.5em;
     width: 80%;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 button.add{
     width: 20%;
     cursor: pointer;
-    background-color: green;
+    background-color: gray;
     color: white;
     font-weight: bold;
     border: none;
-    height: 120px;
+    height: 50px;
     border-top-right-radius:10px ;
     border-bottom-right-radius:10px ;
 }
 button.add:hover{
-    background-color: rgb(0, 85, 0);
+    background-color: rgba(128, 128, 128, 0.623);
 }
 main{
     display: flex;
